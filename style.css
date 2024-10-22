@@ -1,0 +1,18 @@
+@import url('vars.css');
+
+body {
+    background-color: #ccc;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#playground {
+    background: #fff;
+    display: grid;
+    place-content: center;
+    padding: 4rem;
+}
+
