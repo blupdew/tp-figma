@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon site</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.4.14/src/css/preflight.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="playground">
         <article class="card">
-            <p class="card-category">Category</p>
-            <h2 class="card-title">Super title</h2>
+            <div>
+                <p class="card-category">Category</p>
+                <h2 class="card-title">Super title</h2>
+            </div>
             <img src="zelda.png" alt="" class="card-image">
             <p class="card-text">Zelda is depicted as a kind and benevolent ruler with wisdom beyond her years and a deep love towards the people she watches over.</p>
             <p class="card-actions">
                 <button>See more</button>
-                <button>Love 💗</button>
+                <button class="love">Love <img src="heart.svg" alt=""></button>
             </p>
         </article>
     </div>

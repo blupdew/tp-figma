@@ -1,18 +1,107 @@
-@import url('vars.css');
+@import url("vars.css");
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/poppins/Poppins-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/poppins/Poppins-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
 
 body {
-    background-color: #ccc;
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+  background-color: #f5f5f5;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 #playground {
-    background: #fff;
-    display: grid;
-    place-content: center;
-    padding: 4rem;
+  background: #fff;
+  display: grid;
+  place-content: center;
+  padding: 100px 258px;
 }
 
+.card {
+  font-family: Poppins;
+  display: flex;
+  padding: var(--spacing-4);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-8, 32px);
+  align-self: stretch;
+  max-width: 332px;
+
+  border-radius: var(--radius-2xl);
+  border: var(--radius-none) solid var(--colors-pink-600);
+  background: var(--colors-white);
+
+  .card-category {
+    color: var(--colors-gray-500);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--LineHeight-6);
+  }
+
+  .card-title {
+    color: var(--colors-pink-600);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: var(--LineHeight-10);
+  }
+
+  .card-text {
+    color: var(--colors-gray-700);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--LineHeight-6);
+  }
+  
+  .card-image {
+    border-radius: var(--radius-lg);
+    max-height: 332px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  /* Boutons d'action */
+  .card-actions {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-2, 8px);
+    align-self: stretch;
+
+    button {
+      /* Pas d'effets :hover, :focus ? */
+      font-family: inherit;
+      border-radius: var(--radius-full, 9999px);
+      background: var(--colors-pink-100);
+      border: none;
+
+      display: flex;
+      padding: var(--spacing-4) var(--spacing-6);
+      justify-content: center;
+      align-items: center;
+      gap: var(--spacing-1);
+      &.love {
+        color: var(--colors-pink-600);
+        background-color: var(--colors-white);
+        border: var(--radius-none) solid var(--colors-pink-600);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,17 @@
+:root {
+    --colors-white: #fff;
+    --colors-gray-500: #6B7280;
+    --colors-gray-700: #374151;
+    --colors-pink-600: #B02A61;
+    --colors-pink-100: #FFE9F2;
+    --spacing-1: 4px;
+    --spacing-4: 16px;
+    --spacing-6: 24px;
+    --spacing-8: 32px;
+    --LineHeight-6: 24px;
+    --LineHeight-10: 40px;
+    --radius-full: 9999px; /* really ? */
+    --radius-none: 1px;
+    --radius-lg: 8px;
+    --radius-2xl: 24px;
+}
