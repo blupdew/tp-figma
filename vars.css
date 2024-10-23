@@ -11,7 +11,7 @@
     --LineHeight-6: 24px;
     --LineHeight-10: 40px;
     --radius-full: 9999px; /* really ? */
-    --radius-none: 1px;
+    --radius-none: 1px; /* 0 ? */
     --radius-lg: 8px;
     --radius-2xl: 24px;
 }

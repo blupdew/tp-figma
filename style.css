@@ -42,7 +42,7 @@ body {
   max-width: 332px;
 
   border-radius: var(--radius-2xl);
-  border: var(--radius-none) solid var(--colors-pink-600);
+  border: var(--radius-none) solid var(--colors-pink-600); /* --radius-none ? */
   background: var(--colors-white);
 
   .card-category {
